@@ -8,4 +8,4 @@
 
 <!-- [GitHub](https://github.com/docsifyjs/docsify/) -->
 
-[Get Started](#docsify)
+[Get Started](home)
