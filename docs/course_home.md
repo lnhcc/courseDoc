@@ -1,6 +1,6 @@
 <!-- course_home.md -->
 
-# 首页课程
+# 首页课程（后做）
 
 ?> 首页课程列表。返回三个分类，每个分类下五个课程。
 
@@ -10,9 +10,9 @@
 
 ## 请求参数
 
-|  参数  |  类型  | 必填  |      描述       |
-| :----: | :----: | :---: | :-------------: |
-| `test` | string | false | 测试参数 啊啊啊 |
+| 参数 | 类型 | 必填 | 描述 |
+| :--: | :--: | :--: | :--: |
+|  无  |      |      |      |
 
 ## 返回参数
 
@@ -20,22 +20,23 @@
 | :-----------------: | :--: | :--: | :------: |
 | `data <ColumnList>` | list | true | 分类数组 |
 
-## ColumnList 详细
+### ColumnList 详细
 
 |        参数         |  类型  | 必填 |   描述   |
 | :-----------------: | :----: | :--: | :------: |
 |        name         | string | true | 分类名称 |
 | `list <CourseList>` |  list  | true | 课程数组 |
 
-## CourseList 详细
+### CourseList 详细
 
-|        参数        |  类型  | 必填 |     描述     |
-| :----------------: | :----: | :--: | :----------: |
-|    `courseName`    | string | true |   课程名称   |
-|    `courseDesc`    | string | true |   课程描述   |
-|   `coursePrice`    | double | true |   课程售价   |
-| `courseWatchCount` | number | true | 课程观看人数 |
-| `courseSaleCount`  | number | true | 课程售卖次数 |
+|       参数       |  类型  | 必填 |           描述            |
+| :--------------: | :----: | :--: | :-----------------------: |
+|    `courseId`    | string | true |          课程 id          |
+|   `courseName`   | string | true |         课程名称          |
+|   `courseType`   | double | true | 课程标签（0 普通 1 精品） |
+|  `coursePrice`   | double | true |         课程售价          |
+| `courseDuration` | string | true |      课程时长 (min)       |
+| `courseSection`  | string | true |        课程总章节         |
 
 ## 返回格式
 
