@@ -18,10 +18,9 @@
   - [下单](order_add.md)
   - [订单查询](order_list.md)
 
-- 分类相关
+- 工种相关
 
-  - [获取全部栏目](column_all.md)
-  - [获取二级栏目](column_by_id.md)
+  - [获取全部工种](column_all.md)
 
 - 用户相关
   - [登录](login.md)

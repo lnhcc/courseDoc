@@ -28,13 +28,15 @@
 
 ### 返回参数
 
-|        参数        | 类型 | 必填 |    描述    |
-| :----------------: | :--: | :--: | :--------: |
-|    `pagination`    | obj  | true |  分页详情  |
-| `pagination.size`  | int  | true | 每页数据数 |
-| `pagination.page`  | int  | true |  当前页码  |
-| `pagination.total` | int  | true |  数据总数  |
-|       `data`       | obj  | true |    信息    |
+|        参数        |  类型  | 必填 |     描述      |
+| :----------------: | :----: | :--: | :-----------: |
+|       `code`       |  int   | true | 0 异常 1 正常 |
+|       `msg`        | string | true |     描述      |
+|    `pagination`    |  obj   | true |   分页详情    |
+| `pagination.size`  |  int   | true |  每页数据数   |
+| `pagination.page`  |  int   | true |   当前页码    |
+| `pagination.total` |  int   | true |   数据总数    |
+|       `data`       |  obj   | true |     信息      |
 
 ## 返回格式
 
