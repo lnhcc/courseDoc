@@ -22,21 +22,21 @@
 
 ### commentList 详细
 
-|   参数    |  类型  | 必填 |   描述   |
-| :-------: | :----: | :--: | :------: |
-|   `id`    | string | true | 评论 id  |
-|  `count`  | string | true |   评分   |
-| `content` | string | true |   内容   |
-|  `name`   | string | true | 用户姓名 |
-| `picture` | string | true | 用户头像 |
-|  `time`   |  date  | true | 评论时间 |
+|    参数     |  类型  | 必填 |   描述   |
+| :---------: | :----: | :--: | :------: |
+| `commentId` | string | true | 评论 id  |
+|   `count`   |  int   | true |   评分   |
+|  `content`  | string | true |   内容   |
+|   `name`    | string | true | 用户姓名 |
+|  `picture`  | string | true | 用户头像 |
+|   `time`    |  date  | true | 评论时间 |
 
 ## 返回格式
 
 ```js
 data: [
   {
-    id: "",
+    commentId: "",
     count: "",
     content: "",
     name: "",
@@ -44,7 +44,7 @@ data: [
     time: "",
   },
   {
-    id: "",
+    commentId: "",
     count: "",
     content: "",
     name: "",

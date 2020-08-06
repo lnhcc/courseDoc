@@ -22,48 +22,49 @@
 
 ### columnList 详细
 
-|          参数          |  类型  | 必填  |     描述     |
-| :--------------------: | :----: | :---: | :----------: |
-|       `columnId`       | string | true  | 一级工种 id  |
-|      `columnName`      | string | true  | 一级工种名称 |
-|      `columnDesc`      | string | false | 一级工种描述 |
-| `children <childList>` |  list  | true  | 二级工种列表 |
+|          参数          |  类型  | 必填 |     描述     |
+| :--------------------: | :----: | :--: | :----------: |
+|        `value`         | string | true | 一级工种 key |
+|        `label`         | string | true | 一级工种名称 |
+| `children <childList>` |  list  | true | 二级工种列表 |
 
 ### childList 详细
 
-|     参数     |  类型  | 必填  |     描述     |
-| :----------: | :----: | :---: | :----------: |
-|  `columnId`  | string | true  | 二级工种 id  |
-| `columnName` | string | true  | 二级工种名称 |
-| `columnDesc` | string | false | 二级工种描述 |
+|     参数      |  类型  | 必填 |     描述     |
+| :-----------: | :----: | :--: | :----------: |
+| `columnValue` | string | true | 二级工种 key |
+| `columnLabel` | string | true | 二级工种名称 |
 
 ## 返回格式
 
 ```js
 data: [
   {
-    columnId: "1",
-    columnName: "工种1",
-    columnDesc: "啊啊啊1",
+    value: "1",
+    label: "工种1",
     children: [
       {
-        columnId: "11",
-        columnName: "工种11",
-        columnDesc: "啊啊啊11",
+        columnValue: "11",
+        columnLabel: "工种11",
       },
     ],
   },
   {
-    columnId: "2",
-    columnName: "工种2",
-    columnDesc: "啊啊啊2",
+    value: "2",
+    label: "工种2",
     children: [
       {
-        columnId: "21",
-        columnName: "工种21",
-        columnDesc: "啊啊啊21",
+        columnValue: "21",
+        columnLabel: "工种21",
       },
     ],
   },
 ];
 ```
+
+<!-- data:{
+  '工种1':[{name:'工种11'},{name:'工种12'}],
+  '工种2':[{name:'工种21'},{name:'工种22'}],
+  '工种3':[{name:'工种31'},{name:'工种32'}],
+  '工种4':[{name:'工种41'},{name:'工种42'}],
+} -->

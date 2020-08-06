@@ -22,7 +22,7 @@
 |  `name`   | string | true |  用户名   |
 |  `phone`  |  num   | true |  手机号   |
 | `orgName` | double | true | 机构名称  |
-| `orgLoge` | string | true | 机构 logo |
+| `orgLogo` | string | true | 机构 logo |
 
 ## 返回格式
 
@@ -32,7 +32,7 @@ data:{
   name: "小王",
   phone: "15099999999",
   orgName: "常州人社局",
-  orgLoge: "https://CCDSAfs/sdafa/sdfa.jpg",
+  orgLogo: "https://CCDSAfs/sdafa/sdfa.jpg",
 }
 
 ```

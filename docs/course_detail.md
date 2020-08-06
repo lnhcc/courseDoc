@@ -31,20 +31,20 @@
 
 ### priceList 详细
 
-|  参数   |  类型  | 必填  |   描述    |
-| :-----: | :----: | :---: | :-------: |
-|  `id`   | string | true  |  套餐 id  |
-| `name`  | string | true  | 套餐 名称 |
-| `desc`  | string | false | 套餐 描述 |
-| `price` |  list  | true  | 套餐价格  |
+|     参数     |  类型  | 必填  |   描述    |
+| :----------: | :----: | :---: | :-------: |
+|  `priceId`   | string | true  |  套餐 id  |
+| `priceName`  | string | true  | 套餐 名称 |
+| `priceDesc`  | string | false | 套餐 描述 |
+| `priceMoney` |  list  | true  | 套餐价格  |
 
 ### teacherList 详细
 
-|  参数  |  类型  | 必填  |   描述    |
-| :----: | :----: | :---: | :-------: |
-|  `id`  | string | true  |  讲师 id  |
-| `name` | string | true  | 讲师 名称 |
-| `desc` | string | false | 讲师 描述 |
+|     参数      |  类型  | 必填  |   描述    |
+| :-----------: | :----: | :---: | :-------: |
+|  `teacherId`  | string | true  |  讲师 id  |
+| `teacherName` | string | true  | 讲师 名称 |
+| `teacherDesc` | string | false | 讲师 描述 |
 
 ## 返回格式
 
@@ -60,15 +60,15 @@ data:
     courseDuration:'30',
     courseSection:'5'
     priceList: [{
-      id:'',
-      name:'',
-      desc:'',
-      price:''
+      priceId:'',
+      priceName:'',
+      priceDesc:'',
+      priceMoney:''
     }],
     teacherList: [{
-      id:'',
-      name:'',
-      desc:'',
+      teacherId:'',
+      teacherName:'',
+      teacherDesc:'',
     }],
   },
 
