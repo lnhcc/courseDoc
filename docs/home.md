@@ -2,9 +2,9 @@
 
 ## 接口地址
 
-| host       | 192.168.XXX.XXXX:XXXX |
-| ---------- | :-------------------: |
-| `basePath` |        course         |
+| host       | http://192.168.141.143:10000 |
+| ---------- | :--------------------------: |
+| `basePath` |         /marketadmin         |
 
 ## 请求状态 code
 
@@ -28,15 +28,16 @@
 
 ### 返回参数
 
-|        参数        |  类型  | 必填 |     描述      |
-| :----------------: | :----: | :--: | :-----------: |
-|       `code`       |  int   | true | 0 异常 1 正常 |
-|       `msg`        | string | true |     描述      |
-|    `pagination`    |  obj   | true |   分页详情    |
-| `pagination.size`  |  int   | true |  每页数据数   |
-| `pagination.page`  |  int   | true |   当前页码    |
-| `pagination.total` |  int   | true |   数据总数    |
-|       `data`       |  obj   | true |     信息      |
+|         参数          |  类型  | 必填 |     描述      |
+| :-------------------: | :----: | :--: | :-----------: |
+|        `code`         |  int   | true | 0 异常 1 正常 |
+|         `msg`         | string | true |     描述      |
+|      `pageable`       |  obj   | true |   分页详情    |
+|  `pageable.pageSize`  |  int   | true |  每页数据数   |
+| `pageable.pageNumber` |  int   | true |   当前页码    |
+|    `totalElements`    |  int   | true |   数据总数    |
+|     `totalPages`      |  int   | true |    总页数     |
+|        `data`         |  obj   | true |     信息      |
 
 ## 返回格式
 
@@ -44,11 +45,12 @@
 data:{
   code:1,
   msg:'正常',
-  pagination:{
-    page:1,
-    size:10,
-    total:99
+  pageable:{
+    pageNumber:1,
+    pageSize:10,
   },
+  totalElements:100,
+  totalPages:10,
   data:{}
 }
 

@@ -33,10 +33,10 @@
 | :--------------: | :----: | :--: | :-----------------------: |
 |    `courseId`    | string | true |          课程 id          |
 |   `courseName`   | string | true |         课程名称          |
-|   `courseType`   | double | true | 课程标签（0 普通 1 精品） |
+|   `courseType`   |  int   | true | 课程标签（0 普通 1 精品） |
 |  `coursePrice`   | double | true |         课程售价          |
-| `courseDuration` |  num   | true |      课程时长 (min)       |
-| `courseSection`  |  num   | true |        课程总章节         |
+| `courseDuration` |  int   | true |      课程时长 (min)       |
+| `courseSection`  |  int   | true |        课程总章节         |
 
 ## 返回格式
 
@@ -48,16 +48,16 @@ data: [{
 			courseName: "课程名称12",
     		courseType: 0,
     		coursePrice: 10.0,
-    		courseDuration: "20",
-    		courseSection: "10",
+    		courseDuration: 20,
+    		courseSection: 10,
 		},
 		{
 			courseId:'',
 			courseName: "课程名称12",
     		courseType: 0,
     		coursePrice: 10.0,
-   		 	courseDuration: "20",
-    		courseSection: "10",
+   		 	courseDuration: 20,
+    		courseSection: 10,
 		}
 	]
 }, {
@@ -67,8 +67,8 @@ data: [{
 		courseName: "课程名称12",
     	courseType: 0,
     	coursePrice: 10.0,
-    	courseDuration: "20",
-    	courseSection: "10",
+    	courseDuration: 20,
+    	courseSection: 10,
 	}]
 }]
 
