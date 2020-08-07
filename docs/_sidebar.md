@@ -24,4 +24,3 @@
 
 - 用户相关
   - [登录](login.md)
-  - [用户信息](user_detail.md)
